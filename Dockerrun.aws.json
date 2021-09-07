@@ -6,24 +6,28 @@
   "image": "mohit1504/multi-client",
   "hostname": "client",
   "essential": false,
+  "memory":128
   },
   {
   "name": "server",
   "image": "mohit1504/multi-server",
   "hostname": "api",
   "essential": false,
+  "memory":128
   },
   {
   "name": "worker",
   "image": "mohit1504/multi-worker",
   "hostname": "worker",
   "essential": false,
+  "memory":128
   },
   {
   "name":"nginx",
   "image":"mohit1504/multi-nginx",
   "hostname":"nginx",
   "essential":true,
+  "memory":128,
   "portMappings":[
     {
      "hostPort":80,
